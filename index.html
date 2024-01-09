@@ -1,7 +1,258 @@
-<p>Hello 大家好</p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html>
+<!--借鉴源码可以，不要删除这个注释 本网站作者：小兰-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>德华的小店</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <audio src="https://pan.52yuanmo.cn/f/Ogjsn/cac9_402c_5770_568fe8cfa4f6ca88cdb4726137ae5288.mp3" id="audio"></audio>
+    <style>
+        * {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+        
+        html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent;}
+        article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {display:block;}
+        html {font-size:16px;line-height:24px;width:100%;height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;overflow-y:scroll;overflow-x:hidden;}
+        img {vertical-align:middle;max-width:100%;height:auto;border:0;-ms-interpolation-mode:bicubic;}
+        body {min-height:100%;font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",微软雅黑,Arial,sans-serif;}
+        .clearfix {clear:both;zoom:1;}
+        .clearfix:before,.clearfix:after {content:"\0020";display:block;height:0;visibility:hidden;}
+        .clearfix:after {clear:both;}
+        body.error-page-wrapper, .error-page-wrapper.preview {position:relative;overflow:hidden;}
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .video-content {
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 1px 1px 1px rgba(99,99,99,0.1);
+            padding: 50px;
+            background-color: #fff;
+            width: 100%;
+            max-width: 620px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -220px;
+            margin-left: -280px;
+        }
+        .video-content .head-line {
+            transition: color .2s linear;
+            font-size: 40px;
+            line-height: 60px;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            color: #02cb2a; /* 将粉色改成黄色 */
+        }
+        .video-content .subheader {
+            transition: color .2s linear;
+            font-size: 32px;
+            line-height: 46px;
+            color: #02cb2a; /* 将粉色改成黄色 */
+        }
+        .video-content .hr {
+            height: 1px;
+            background-color: #eee;
+            width: 80%;
+            max-width: 350px;
+            margin: 25px auto;
+        }
+        .video-content .context {
+            transition: color .2s linear;
+            font-size: 16px;
+            line-height: 27px;
+            color: #aaa;
+        }
+        .video-content .context p {
+            margin: 0;
+        }
+        .video-content .context p:nth-child(n+2) {
+            margin-top: 16px;
+        }
+        .video-content .buttons-container {
+            margin-top: 35px;
+            overflow: hidden;
+        }
+        .video-content .buttons-container a {
+            transition: text-indent .2s ease-out, color .2s linear, background-color .2s linear;
+            text-indent: 0px;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            background-color: #02cb2a;
+            border-radius: 99px;
+            padding: 8px 0 8px;
+            text-align: center;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            width: 45%;
+        }
+        .video-content .buttons-container a:hover {
+            text-indent: 15px;
+        }
+        .video-content .buttons-container a:nth-child(1) {
+            float: left;
+        }
+        .video-content .buttons-container a:nth-child(2) {
+            float: right;
+        }
+        @media screen and (max-width:580px) {
+            .video-content {
+                padding: 30px 5%;
+                position: static;
+                left: 0;
+                margin-top: 0;
+                margin-left: 0;
+            }
+            .video-content .head-line {
+                font-size: 36px;
+            }
+            .video-content .subheader {
+                font-size: 27px;
+                line-height: 37px;
+            }
+            .video-content .hr {
+                margin: 30px auto;
+                width: 215px;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .video-content {
+                padding: 30px;
+            }
+            .video-content .head-line {
+                font-size: 32px;
+            }
+            .video-content .hr {
+                margin: 25px auto;
+                width: 180px;
+            }
+            .video-content .context {
+                font-size: 15px;
+                line-height: 22px;
+            }
+            .video-content .context p:nth-child(n+2) {
+                margin-top: 10px;
+            }
+            .video-content .buttons-container {
+                margin-top: 29px;
+            }
+            .video-content .buttons-container a {
+                float: none !important;
+                width: 65%;
+                margin: 0 auto;
+                font-size: 13px;
+                padding: 9px 0;
+            }
+            .video-content .buttons-container a:nth-child(2) {
+                margin-top: 12px;
+            }
+        }
 
-<ul>
-  <li> <a href="https://www.zhihu.com">知乎</a> </li>
+           .popup-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
 
-</ul>
+        .close-button {
+            cursor: pointer;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .video-content {
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgba(99, 99, 99, 0.1);
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    width: 100%;
+    max-width: 620px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -220px;
+    margin-left: -280px;
+}
+
+    </style>
+</head>
+<body class="error-page-wrapper">
+    <div class="popup-container" id="popupContainer">
+        <span class="close-button" onclick="closePopup()">&times;</span>
+        ⚠️有事说事，请注意⚠️<br>😡非卡密自身问题，一旦售出不予退换😡<br>😊售后Q群819662571😊
+    </div>
+    <video class="video-background" autoplay muted loop>
+        <source src="https://pan.52yuanmo.cn/f/v7esP/202401082027.mp4" type="video/mp4">
+        您的浏览器不支持视频
+    </video>
+
+
+
+
+    <div class="video-content">
+        <div class="head-line"></div>
+        <div class="subheader">
+            <h1>德华的小店<br/></h1>
+        </div>
+        <div class="hr"></div>
+        <div class="context">
+            <p><font color="#B22222"><h3><br/>欢迎来到德华的小店<br/>祝您购物愉快</h3></font></p>
+        
+        </div>
+        <div class="buttons-container">
+            <a href="https://s.msmall88.com/links/0E77EF9F?go=1" class="nav-link" style="font-weight: bold;">进入店铺</a>
+            <a href="https://discord.gg/XJwDuN2TMd" class="nav-link" style="font-weight: bold;">官方DISCORD频道</a>
+        
+            
+        </div>
+    </head>
+
+    <hr/>
+<body>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/sweetalert.min.js"> </script>
+    <script src="js/main.js"></script>
+</body>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                showPopup();
+            });
+    
+            function showPopup() {
+                var popup = document.getElementById("popupContainer");
+                popup.style.display = "block";
+            }
+    
+            function closePopup() {
+                var popup = document.getElementById("popupContainer");
+                popup.style.display = "none";
+            }
+        </script>
+
+
+
+    </div>
+</body>
+</html>
